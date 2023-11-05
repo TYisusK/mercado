@@ -29,7 +29,7 @@ ruta.post("/nuevousuario", subirArchivo(), async (req, res) => {
 ruta.get("/editarUsuario/:id", async (req, res) => {
   var user = await buscarporID(req.params.id);
   if (user) {
-    res.render("usuarios/modificar", { user });
+    res.render("Views/usuarios/modificar", { user });
   } else {
     res.status(404).send("Usuario no encontrado.");
   }

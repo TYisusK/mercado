@@ -1,86 +1,18 @@
-/* Estilos para el carrusel */
-.carousel {
-  margin-top: 20px;
-  overflow: hidden;
-  position: relative;
-  padding: 20px 0; /* Espaciado superior e inferior para el carrusel */
-}
-
-.owl-carousel {
-  display: flex;
-  transition: transform 0.3s ease;
-  width: 700%; /* Ajusta el ancho del carrusel para mostrar 7 elementos a la vez */
-  max-height: 400px; /* Ajusta la altura del carrusel a tu preferencia */
-  background-color: #fff; /* Fondo blanco para los elementos del carrusel */
-  border-radius: 5px; /* Borde redondeado para el carrusel */
-}
-
-.owl-carousel .item {
-  flex: 14.28%; /* Divide el ancho en 7 partes iguales para mostrar 7 elementos a la vez */
-  padding: 10px;
-}
-
-/* Estilos para las cartas de productos */
+/* Estilos para centrar las tarjetas y ajustar el tamaño de las imágenes */
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .product-card {
-  width: 300px;
-  margin: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 20px;
+  width: 250px; /* Ancho fijo para todas las tarjetas */
+  border: 1px solid #ccc;
+  padding: 10px;
   text-align: center;
-  transition: transform 0.2s ease;
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-}
-
-product-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-/* Colores principales */
-body {
-  background-color: #f0f0f0; /* Fondo gris claro */
-}
-
-/* Estilos de texto */
-h3 {
-  color: #333; /* Texto negro para los títulos */
-}
-
-p {
-  color: #666; /* Texto gris para la descripción y precio */
-}
-
-button {
-  background-color: #FF80AB; /* Fondo rosa fuerte para el botón de "Agregar al Carrito" */
-  color: #fff; /* Texto blanco para el botón */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #E35482; /* Color de fondo más oscuro al pasar el mouse */
-}
-.product-image {
-  width: 200px; /* Ancho deseado */
-  height: 200px; /* Altura deseada */
-  overflow: hidden; /* Cortar imágenes que no encajen en el contenedor */
-}
-.product-image img {
-  width: 100%; /* Para que la imagen llene el contenedor */
-  height: auto; /* Mantener la proporción original de la imagen */
+.product-card img {
+  max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
 }
