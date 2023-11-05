@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Inicio</title>
+  <link rel="stylesheet" href="/Web/css/inicio.css">
+</head>
+
+<body>
+  <%- include("../templates/encabezado") %>
+
+  <div class="products">
+    <% if (productos.length > 0) { %>
+      <% productos.forEach(producto => { %>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/Web/imagesProd/<%= producto.foto %>" alt="<%= producto.nombre %>">
+          </div>
+          <h3><%= producto.nombre %></h3>
+          <p><%= producto.descripcion %></p>
+          <p>Precio: <%= producto.precio %></p>
+          
+          <form action="/agregar_al_carrito" method="post">
+            <input type="hidden" name="productoId" value="<%= producto.id %>">
+            <button type="submit">Agregar al Carrito</button>
+          </form>
+        </div>
+      <% }); %>
+    <% } else { %>
+      <p>No existen productos.</p>
+    <% } %>
+  </div>
+</body>
+</html>

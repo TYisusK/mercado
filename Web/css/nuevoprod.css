@@ -1,0 +1,50 @@
+/* Estilos para el formulario de nuevo producto */
+.container {
+    background-color: #F5F5F5; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    border: 1px solid #E0E0E0; /* Borde ligero */
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #FF80AB; /* Color de encabezado azul */
+    color: white; /* Texto blanco en el encabezado */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333; /* Color de texto de etiqueta */
+}
+
+.form-control {
+    border: 1px solid #E0E0E0; /* Borde ligero para campos */
+    border-radius: 5px;
+}
+
+.card-footer {
+    background-color: #F5F5F5; /* Fondo gris claro para el pie de tarjeta */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados abajo */
+}
+
+.btn-primary {
+    background-color: #007BFF; /* Botón de color azul */
+    color: white; /* Texto blanco en el botón */
+}
+
+.btn-secondary {
+    background-color: #6C757D; /* Botón de color gris oscuro */
+    color: white; /* Texto blanco en el botón */
+}

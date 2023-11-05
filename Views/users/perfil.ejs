@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <h1>Perfil de Usuario</h1>
+    <% if (user) { %>
+        <p><strong>ID de Usuario:</strong> <%= user.id %></p>
+        <p><strong>Nombre:</strong> <%= user.nombre %></p>
+        <p><strong>Usuario:</strong> <%= user.usuario %></p>
+        <p><strong>Edad:</strong> <%= user.edad %></p>
+        <p><strong>Correo Electrónico:</strong> <%= user.correo %></p>
+        <p><strong>Tipo de Usuario:</strong> <%= user.tipo %></p>
+        <img src="<%= user.foto %>" alt="Foto de Perfil" width="200">
+    <% } else { %>
+        <p>Usuario no encontrado.</p>
+    <% } %>
+</body>
+</html>
