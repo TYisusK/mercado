@@ -9,8 +9,8 @@ var productosRutas = require("./Routes/productRoutes");
 var usuariosRutasApi = require("./Routes/userApis");
 var productosRutasApi = require("./Routes/productApis");
 
-app.set("view engine", "ejs");
-app.set('Views', path.join(__dirname, 'Views')); // En lugar de app.set('/Views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'Views'));
+app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use('/Web', express.static(path.join(__dirname, 'Web')));
 app.use(cors());
